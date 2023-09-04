@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+/*-----------------------------------------------------------------------------*/
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+} 
+html,body { 
+    width: 100%; 
+    height: 100%; 
+}
+
+body{
+    overflow-x: hidden;
+    background-color: black;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.top{
+    display: flex;
+    background-color: black;
+    color: white;
+    font-family: 'Tulpen One', cursive;
+    justify-content: center;
+    font-size: 0.9em;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.header {
+    display: flex;
+    width: 100vw;
+    padding-left: 2.5vw;
+    padding-top: 1.3vw;
+    padding-bottom: 1vw;
+    background-color: white;
+    font-size: 1.1em;
+    border-bottom: 0.01vw solid black;
+}
+
+.header img {
+    height: 2.7vw;
+}
+
+.logo {
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 1.2em;
+}
+
+.header a {
+    color: black;
+    text-decoration: none;
+    padding: 0.8vw;
+}
+
+.navbar {
+    display: flex;
+    padding-right: 2vw;
+    width: 85vw;
+    justify-content: flex-end;
+    font-family: 'Playfair Display', serif;
+    gap: 4.5vw;
+}
+
+.icon1{
+    font-size: 1.4em;
+    display: none;
+}
+
+.navbar a:hover {
+    color: rgb(201, 5, 5);
+    transition: 0.5s;
+}
+
+@media (max-width:600px) {
+    .navbar {
+        display: none;
+    }
+
+    .icon1 {
+        display: block;
+    }
+
+}
+
+/*-----------------------------------------------------------------------------*/
+   /*-----------------------------------------------------------------------------*/
+
+.section {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.content h1{
+    font-size: 7em;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    margin-left: 33.5vw;
+    margin-top: 5vh;   
+}
+
+.content button {
+    margin-left: 45vw;
+    margin-top: 5vh;
+    padding: 0.5vw;
+    font-size: 1.5em;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.content h2{
+    margin-top: 7vh;
+    margin-left: 2vw;
+    font-size: 7em;
+    font-family: 'Indie Flower', cursive;
+    color: white;
+}
+
+.content h3 {
+    margin-left: 18.5vw;
+    font-size: 7em;
+    font-family: 'Indie Flower', cursive;
+    color: white;
+    
+}
+
+.content p{
+    width: 80vw;
+    margin-left: 9.5vw;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    font-size: 1.3em;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: center;
+    line-height: 4.5vh;
+}
+
+   /*-----------------------------------------------------------------------------*/
+
+.eductaion {
+    width: 50vw;
+    background-color: aquamarine;
+    display: flex;
+
+    .graduation{
+        background-color: black;
+        color: white;
+        border: 0.2vw solid black;
+        margin-top: 4vh;
+        margin-left: 2vw;
+    }
+    .graduation li{
+        margin-left: 3vw;
+        font-family: 'Rajdhani', sans-serif;
+    }
+
+    .college{
+        border: 0.2vw solid black;
+        margin-top: 4vh;
+        margin-left: 2vw;
+    }
+
+    .school2 {
+        border: 0.2vw solid black;
+        margin-top: 4vh;
+        margin-left: 2vw;
+    }
+    .school1{
+        border: 0.2vw solid black;
+        margin-top: 4vh;
+        margin-left: 2vw;
+    }
+        
+}
+
+.center-line {
+    width: 0.5vw;
+    height: 100%;
+    margin-left: 3vw;
+    margin-top: 2vh;
+    background-color: black;
+}
+
+.studies h1{
+    font-family: 'Raleway', sans-serif;
+    margin-left: 1vw;
+}
+
+.studies h5{
+    margin-left: 1vw;
+}
+
+.studies p {
+    font-family: 'Source Code Pro', monospace;
+    margin-left: 1vw;
+}
+
+.studies h3 {
+    font-family: 'Teko', sans-serif;
+    margin-left: 1vw;
+}
+
+.certification {
+    width: 50vw;
+    background-color: aqua;
+    display: flex;
+
+    .certificate1 {
+        border: 0.2vw solid black;
+        margin-top: 4vh;
+        margin-left: 2vw;
+    }
+    .certificate1 li{
+        margin-left: 3vw;
+        font-family: 'Rajdhani', sans-serif;
+    }
+
+    .certificate2{
+        border: 0.2vw solid black;
+        margin-top: 4vh;
+        margin-left: 2vw;
+    }
+
+    .certificate3{
+        border: 0.2vw solid black;
+        margin-top: 4vh;
+        margin-left: 2vw;
+    }
+}
+
+.center-line {
+    width: 0.5vw;
+    height: 100%;
+    margin-left: 3vw;
+    margin-top: 2vh;
+    background-color: black;
+}
+
+.certificates h1{
+    font-family: 'Raleway', sans-serif;
+    margin-left: 1vw;
+}
+
+.certificates h5{
+    margin-left: 1vw;
+}
+
+.certificates p {
+    font-family: 'Source Code Pro', monospace;
+    margin-left: 1vw;
+}
+
+.certificates h3 {
+    font-family: 'Teko', sans-serif;
+    margin-left: 1vw;
+}
+
+   /*-----------------------------------------------------------------------------*/
+
+.languages{
+    color: white;
+    padding-bottom: 4vh;
+}
+
+.languages h1 {
+    font-size: 4em;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 5vw;
+    margin-top: 3vh;
+}
+
+.diffrent {
+    margin-top: 5vh;
+    margin-left: 9vw;
+    line-height: 10vh;
+}
+
+.bar{
+    width: 40vw; 
+    background-color: white; 
+    height: 3vh;
+    margin-top: 3.9vh;
+    margin-left: 2vw;
+}
+
+.english span {
+    height: 3vh; 
+    width: 30vw; 
+    background-color: rgb(103, 232, 12); 
+    position: absolute;
+    border: 0.3vw solid ;
+}
+
+.italian span {
+    height: 3vh; 
+    width: 20vw; 
+    background-color: rgb(10, 152, 235); 
+    position: absolute;
+    border: 0.3vw solid ;
+}
+
+.hindi span {
+    height: 3vh; 
+    width: 35vw; 
+    background-color: rgb(249, 0, 232); 
+    position: absolute;
+    border: 0.3vw solid ;
+}
+
+.telugu span {
+    height: 3vh; 
+    width: 35vw; 
+    background-color: rgb(255, 204, 0); 
+    position: absolute;
+    border: 0.3vw solid ;
+}
+
+/*-----------------------------------------------------------------------------*/
