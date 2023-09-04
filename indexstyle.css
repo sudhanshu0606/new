@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap');*/
+
+/*-----------------------------------------------------------------------------*/
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+} 
+html,body { 
+    width: 100%; 
+    height: 100%; 
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.cursor{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border-radius: 50%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.screen{
+    position: absolute;
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+.head {
+    padding-left: 5vw;
+    padding-top: 5vw;
+}
+
+.head h2 {
+    font-family: 'Gluten', cursive;
+    font-size: 3em;
+    padding-top: 4vw;
+}
+
+.number {
+    align-items: flex-end;
+    padding-left: 42vw;
+    padding-top: 0.5vwvw;
+}
+
+.number h1 {
+    font-size: 6em;
+    padding-top: 5vw;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+
+.top{
+    display: flex;
+    background-color: black;
+    color: white;
+    font-family: 'Tulpen One', cursive;
+    justify-content: center;
+    font-size: 0.9em;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.header {
+    display: flex;
+    width: 100vw;
+    padding-left: 2.5vw;
+    padding-top: 1.3vw;
+    padding-bottom: 1vw;
+    /*background-color: blue;*/
+    font-size: 1.1em;
+    border-bottom: 0.01vw solid black;
+}
+
+.header img {
+    height: 2.7vw;
+}
+
+.logo {
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 1.2em;
+}
+
+.header a {
+    color: black;
+    text-decoration: none;
+    padding: 0.8vw;
+}
+
+.navbar {
+    display: flex;
+    padding-right: 2vw;
+    width: 85vw;
+    justify-content: flex-end;
+    font-family: 'Playfair Display', serif;
+    gap: 4.5vw;
+}
+
+.icon1{
+    font-size: 1.4em;
+    display: none;
+}
+
+.navbar a:hover {
+    color: rgb(201, 5, 5);
+    transition: 0.5s;
+}
+
+@media (max-width:600px) {
+    .navbar {
+        display: none;
+    }
+
+    .icon1 {
+        display: block;
+    }
+
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.section h1 {
+    padding-top: 2vw;
+    padding-left: 8.5vw;
+    font-size: 5em;
+    /*font-family: 'Pacifico', cursive;*/
+    font-family: 'Shadows Into Light', cursive;
+    height: 9.2vw;
+
+}
+
+.section h2 {
+    padding-left: 12vw;
+    font-size: 4em;
+    font-family: 'Shadows Into Light', cursive;
+    height: 7.2vw;
+}
+
+.section p {
+    padding-left: 8vw;
+    padding-top: 0.7vw;
+    font-size: 1.75em;
+    font-family: 'Dancing Script', cursive;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.buttons {
+    display: flex;
+    gap: 20vw;
+    padding-left: 12vw;
+    padding-top: 3.3vw;
+}
+
+.button{
+    font-size: 1.2em;
+    padding: 0.75vw;
+    border: 0.2vw solid black;
+    background-color: black;
+}
+
+.button a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.button:hover {
+    background-color: white;
+    box-shadow: 0.3vw 0.3vw ;
+    transition: 0.5s;
+}
+
+.button a:hover {
+    color: black;
+    transition: 0.5s;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.icons{
+    display: flex;
+    gap: 5vw;
+    padding-top: 4.2vw;
+    padding-left: 5vw;
+}
+
+.icons a {
+    color: white;
+    font-size: 1em;
+    background-color:black;
+    padding: 0.5vw;
+    border: 0.1vw solid black;
+    border-radius: 50%;
+}
+
+.icons a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+    box-shadow: 0.2vw 0.2vw;
+}
+
+/*-----------------------------------------------------------------------------*/
+
